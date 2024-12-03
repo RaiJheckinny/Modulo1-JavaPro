@@ -39,7 +39,17 @@ public class Main {
 
         node.printList();
 
+        //Desafio
 
+        HashMap hashMap = new HashMap(10);
+        hashMap.put(1, 20);
+        hashMap.put(2, 30);
+        hashMap.put(3, 40);
+
+        System.out.println(hashMap.getList());
+
+        System.out.println("Valor da chave 2: " + hashMap.get(2));
+        System.out.println("Valor da chave 4 (inexistente): " + hashMap.get(4));
 
 
     }
