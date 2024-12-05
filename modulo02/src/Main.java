@@ -1,14 +1,12 @@
 import java.math.BigInteger;
 
 public class Main {
-    public static BigInteger numberMultiplicado = new BigInteger("1");
     public static final BigInteger calcularFimonat(BigInteger number){
-        if (number.equals(new BigInteger("0"))){
-            return numberMultiplicado;
+        if (number.equals(BigInteger.ZERO)){
+            return BigInteger.ONE;
         }
-        numberMultiplicado = numberMultiplicado.multiply(number);
 
-        return calcularFimonat(number.subtract(new BigInteger("1")));
+        return number.multiply(calcularFimonat(number.subtract(BigInteger.ONE)));
     }
 
     public static final Long fatorial(Long n){
@@ -20,7 +18,7 @@ public class Main {
 
     public static void main(String[] args) {
         //Exercicio 01
-        Long y = 100L;
+        Long y = 25L;
         System.out.println("Fibonate de " + y + " e: " + fatorial(y));
 
         //Exercicio 02
