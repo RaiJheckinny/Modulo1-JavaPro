@@ -22,7 +22,7 @@ public class Main {
         System.out.println("Fibonate de " + y + " e: " + fatorial(y));
 
         //Exercicio 02
-        BigInteger n = new BigInteger("100");
+        BigInteger n = new BigInteger("1000");
         System.out.println("Fibonate de " + n + " e: " + calcularFimonat(n));
     }
 }
